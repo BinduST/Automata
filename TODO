@@ -1,0 +1,30 @@
+
+Problem:-
+    WAP to generate a DFA which can determine whether a string is in that language or not.
+
+A DFA generator will accept a 5 tuple-
+        1. a set of states
+        2. an alphabet set
+        3. a transition function
+        4. an initial state
+        5. a set of final states
+
+will generate a DFA
+
+A DFA object: -
+
+{
+   "states": ["q1","q2",....,"qn"],
+   "alphabets": ["0","1"],
+   "transition": {
+                    "q1": {"q2", alphabet:"1" },
+                    "q1": {"q2", alphabet:"0" },
+                    "q2": {"q2", alphabet:"1" },
+                    "q2": {"q2", alphabet:"0" },
+                    .
+                    .
+                    .
+               },
+   "q0": "q1",
+   "F": ["q2"]
+}
